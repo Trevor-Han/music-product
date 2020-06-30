@@ -1,0 +1,52 @@
+html, body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: transparent;
+  font: 14px/1.5 Helvetica,sans-serif,STHeiTi;
+  color: #333;
+  outline: 0;
+}
+img{
+  vertical-align: bottom;
+}
+.fluid-img{
+  width: 100%;
+}
+/*浮动工具类*/
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+/*清除浮动工具类*/
+.clearfix::after{
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix{
+  *zoom:1;
+}
+
+/*自定义居中混合*/
+.center(){
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hCenter(){
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.vCenter(){
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

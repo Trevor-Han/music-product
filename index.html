@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易云音乐</title>
+    <!--可以让部分国产浏览器默认采用高速模式渲染页面-->
+    <meta name="renderer" content="webkit">
+    <!--为了让 IE 浏览器运行最新的渲染模式下-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="网易云音乐，音乐，播放器，网易，下载，播放，DJ，免费，明星，精选，歌单，识别音乐，收藏，分享音乐，音乐互动，高音质，320K，音乐社交，官网，移动站，music.163.com">
+    <meta name="description" content="网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--
+    apple-touch-icon: 是苹果私有的属性
+    作用: 指定将网页保存到主屏幕上的时候的图标
+    -->
+    <link rel="apple-touch-icon"  href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon114.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon180.png">
+    <script>
+        let scale = 1.0 / window.devicePixelRatio;
+        let text = `<meta name="viewport" content="width=device-width, initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no">`;
+        document.write(text);
+        document.documentElement.style.fontSize = window.innerWidth / 7.5 + "px";
+    </script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet/less" href="css/index.less">
+</head>
+<body>
+<!--头部 Start-->
+<div class="header">
+  <div class="header-default">
+    <div class="header-center">
+      <div class="header-center-box">
+        <img src="images/topbar-it666-search.png" alt="">
+        <input type="text" placeholder="大家都在搜 那个女孩">
+        <span class="header-title">我的音乐</span>
+        <div class="header-switch">
+          <i></i>
+          <span class="active">动态</span>
+          <span>附近</span>
+        </div>
+      </div>
+    </div>
+    <div class="header-left"></div>
+    <div class="header-cancle">
+      <a href="#">取消</a>
+    </div>
+    <div class="header-right"></div>
+  </div>
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="search-ad">
+        <img src="images/img1.jpg" alt="广告图" class="fluid-img">
+        <span>X</span>
+      </div>
+      <div class="search-history">
+        <div class="history-top">
+          <h6>搜索历史</h6>
+          <img src="images/search-it666-delete.png" alt="删除">
+        </div>
+        <ul class="history-bottom"></ul>
+      </div>
+      <div class="search-hot">
+        <div class="hot-top">
+          <h6>热搜榜</h6>
+        </div>
+        <ul class="hot-bottom">
+
+        </ul>
+      </div>
+      <div class="search-current">
+        <div class="current-top">
+          搜索"jiang"
+        </div>
+        <ul class="current-bottom">
+          <li>
+            <img src="images/topbar-it666-search.png" alt="搜索 ">
+            <p>怕怕怕怕怕</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--头部 End-->
+<!--内容 Start-->
+<div class="main">
+    <div class="main-in">
+        <!--下拉刷新 Start-->
+        <div class="pull-down">
+            <img src="images/pull-down.png" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="60px" height="60px" viewBox="279.747 366.016 60 60" enable-background="new 279.747 366.016 60 60" xml:space="preserve">
+<path id="refreshLogo" fill="none" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" d="M301.144,374.58
+	c-16.549,5.334-25.163,23.41-15.075,37.437c8.615,12.051,26.864,15.606,40.692,8.001c10.995-6.025,14.282-18.768,7.368-28.349
+	c-5.555-7.705-17.229-9.977-26.07-5.137c-7.027,3.853-8.614,10.767-5.44,16.298c3.06,5.137,11.221,5.631,15.302,2.667
+	c5.44-4.05,4.193-10.568,1.474-15.31c-14.282-25.09,7.254-24.694,9.975-18.966"/>
+</svg>
+        </div>
+        <!--下拉刷新 End-->
+
+        <!--Banner Start-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper"></div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--Banner End-->
+
+        <!--顶部导航 Start-->
+        <div class="nav">
+            <ul>
+                <li>
+                    <p>
+                        <img src="images/home-it666-rl.png" alt="">
+                        <i>23</i>
+                    </p>
+                    <span>每日推荐</span>
+                </li>
+                <li>
+                    <img src="images/home-it666-gd.png" alt="">
+                    <span>歌单</span>
+                </li>
+                <li>
+                    <img src="images/home-it666-phb.png" alt="">
+                    <span>排行榜</span>
+                </li>
+                <li>
+                    <img src="images/home-it666-dt.png" alt="">
+                    <span>电台</span>
+                </li>
+                <li>
+                    <img src="images/home-it666-zb.png" alt="">
+                    <span>直播</span>
+                </li>
+            </ul>
+        </div>
+        <!--顶部导航 End-->
+
+        <div class="recommend"></div>
+        <div class="exclusive"></div>
+        <div class="album"></div>
+        <div class="mv"></div>
+        <div class="dj"></div>
+
+        <!--上拉加载更多 Start-->
+        <div class="pull-up">
+            <p>
+                <img src="images/pull-up.gif" alt="">
+                <span>上拉加载更多</span>
+            </p>
+        </div>
+        <!--上拉加载更多 End-->
+    </div>
+</div>
+<script id="bannerSlide" type="text/html">
+    <% for(let i = 0; i < banners.length; i++) {%>
+    <div class="swiper-slide">
+        <img src="<%=banners[i].pic%>" class="fluid-img">
+        <span style="background: <%=banners[i].titleColor%>"><%=banners[i].typeTitle%></span>
+    </div>
+    <% } %>
+</script>
+<script id="category" type="text/html">
+    <div class="category">
+        <div class="category-top">
+            <h3><%=title%></h3>
+            <span><%=subTitle%></span>
+        </div>
+        <div class="category-bottom">
+            <ul>
+                <% for(let i = 0; i < result.length; i ++) {%>
+                <li style="width: <%=result[i].width%>rem">
+                    <div>
+                        <img src="<%=result[i].picUrl%>" class="fluid-img">
+                        <% if(title === "推荐歌单") {%>
+                        <p class="p1">
+                            <img src="images/home-small-play.png" alt="">
+                            <span><%=result[i].playCount%></span>
+                        </p>
+                        <% } else if(title === "独家放送") {%>
+                        <p class="p2">
+                            <img src="images/home-small-exclusive.png" alt="">
+                        </p>
+                        <% } else if(title === "主播电台") {%>
+                        <p class="p3">
+                            <img src="images/home-small-dj.png" alt="">
+                        </p>
+                        <% } %>
+                    </div>
+                    <p class="category-title"><%=result[i].name%></p>
+                    <p class="category-singer"><%=result[i].artistName%></p>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</script>
+<script id="hotDetail" type="text/html">
+  <% for(let i = 0; i < data.length; i++){%>
+  <li>
+    <span class="hot-left"><%=(i + 1)%></span>
+    <div class="hot-right">
+      <p>
+        <strong><%=data[i].searchWord%></strong>
+        <span><%=data[i].score%></span>
+        <img src="<%=data[i].iconUrl%>" alt="hot">
+      </p>
+      <p><%=data[i].content%></p>
+    </div>
+  </li>
+  <% } %>
+</script>
+<!--内容 End-->
+
+<!--底部 Start-->
+<div class="footer">
+    <ul>
+        <li class="active">
+            <img src="images/toolbar-it666-discovery-selected.png" alt="">
+            <span>发现</span>
+        </li>
+        <li>
+            <img src="images/toolbar-it666-video-normal.png" alt="">
+            <span>视频</span>
+        </li>
+        <li>
+            <img src="images/toolbar-it666-me-normal.png" alt="">
+            <span>我的</span>
+        </li>
+        <li>
+            <img src="images/toolbar-it666-friend-normal.png" alt="">
+            <span>朋友</span>
+        </li>
+        <li>
+            <img src="images/toolbar-it666-account-normal.png" alt="">
+            <span>账号</span>
+        </li>
+    </ul>
+</div>
+<!--底部 End-->
+<script src="js/less.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/fx_methods.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/axios.js"></script>
+<script src="js/api.js"></script>
+<script src="js/template-web.js"></script>
+<script src="js/clamp.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
