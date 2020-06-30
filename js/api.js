@@ -52,6 +52,9 @@
         static getHomeHotDetail(){
           return NJHttp.get("/search/hot/detail");
         }
+        static getHomeSearchSuggest(keywords){
+            return NJHttp.get("/search/suggest?keywords="+keywords+"&type=mobile");
+        }
     }
     window.NJHttp = NJHttp;
     window.HomeApis = HomeApis;

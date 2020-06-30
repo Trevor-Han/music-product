@@ -72,7 +72,39 @@ $(function () {
     probeType: 3,
   });
   //5.处理相关搜索界面
-  $(".header-center-box>input")[0].oninput = throttle
+  $(".header-center-box>input")[0].oninput = throttle(function () {
+      //没有输入数据时
+      if(this.value.length === 0){
+          $(".search-ad").show();
+          $(".search-history").show();
+          $(".search-hot").show();
+          $(".search-current").hide();
+      }else {
+          $(".search-ad").hide();
+          $(".search-history").hide();
+          $(".search-hot").hide();
+          $(".search-current").show();
+          HomeApis.getHomeSearchSuggest(this.value)
+              .then(function (data) {
+                  //输入文字时清除之前的li
+                  $(".current-bottom>li").remove();
+                  //遍历文档
+                  data.result.allMatch.forEach(function (obj) {
+                      let oLi = $(` 
+                           <li>
+                          <img src="images/topbar-it666-search.png" alt="搜索">
+                          <p>${obj.keyword}</p>
+                        </li>`);
+                      $(".current-bottom").append(oLi);
+                  });
+              })
+              .catch(function (err) {
+                  console.log(err);
+              })
+      }
+      //搜索内容变成输入数据
+      $(".current-top").text(`搜索"${this.value}"`);
+  },1000)
   /*公共底部处理*/
   let pageArray = ["home", "video", "me", "friend", "account"];
   $(".footer>ul>li").click(function () {
