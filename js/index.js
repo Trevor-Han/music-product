@@ -1,14 +1,43 @@
 $(function () {
     /*公共头部处理*/
+    //1.监听头部输入框获取焦点
     $(".header-center-box>input").focus(function () {
         $(".header").addClass("active");
         $(".header-container").show();
+        //2.处理搜索历史(获取焦点时就添加到current-bottom>li里)
+        $(".current-bottom>li").remove();
+        let historyArray = getHistory();
+        if (historyArray.length === 0){
+            $(".search-history").hide();
+        }
+        else {
+            $(".search-history").show();
+            historyArray.forEach(function (item) {
+                let oLi = $("<li>"+item+"</li>")
+                $(".history-bottom").append(oLi);
+            });
+        }
         searchScroll.refresh();
     });
+    //2.箭头头部输入框失去焦点
+    $(".header-center-box>input").blur(function () {
+        // console.log(this.value);
+        if(this.value.length === 0){
+            return;
+        }
+        let historyArray = getHistory();
+        historyArray.unshift(this.value);
+        this.value = "";
+        localStorage.setItem("history",JSON.stringify(historyArray));
+    });
+    //3.取消按钮点击事件
     $(".header-cancle").click(function () {
         $(".header").removeClass("active");
         $(".header-container").hide();
+        //取消时还原回搜索界面
+        $(".header-center-box>input")[0].oninput();
     });
+    //4.箭头头部开关
     $(".header-switch>span").click(function () {
         $(this).addClass("active").siblings().removeClass("active");
         $(".header-switch>i").animate({left: this.offsetLeft}, 100);
@@ -17,28 +46,10 @@ $(function () {
   $(".search-ad>span").click(function () {
     $(".search-ad").remove();
   });
-  //2.处理搜索历史
-  let historyArray = getHistory();
-  if (historyArray.length === 0){
-    $(".search-history").hide();
-  }else {
-    $(".search-history").show();
-    historyArray.forEach(function (item) {
-      let oLi = $("<li>"+item+"</li>")
-      $(".history-bottom").append(oLi);
-    });
-  }
-  $(".header-center-box>input").blur(function () {
-    // console.log(this.value);
-    if(this.value.length === 0){
-      return;
-    }
-    historyArray.unshift(this.value);
-    this.value = "";
-    localStorage.setItem("history",JSON.stringify(historyArray));
-  });
+  //2.监听搜索界面清空历史记录
   $(".history-top>img").click(function () {
     localStorage.removeItem("history");
+    $(".search-history").hide();
   });
   function getHistory(){
     let historyArray = localStorage.getItem("history");
@@ -76,7 +87,7 @@ $(function () {
       //没有输入数据时
       if(this.value.length === 0){
           $(".search-ad").show();
-          $(".search-history").show();
+          // $(".search-history").show();
           $(".search-hot").show();
           $(".search-current").hide();
       }else {
@@ -96,6 +107,7 @@ $(function () {
                           <p>${obj.keyword}</p>
                         </li>`);
                       $(".current-bottom").append(oLi);
+                      searchScroll.refresh();
                   });
               })
               .catch(function (err) {
@@ -104,7 +116,9 @@ $(function () {
       }
       //搜索内容变成输入数据
       $(".current-top").text(`搜索"${this.value}"`);
-  },1000)
+      searchScroll.refresh();
+  },1000);
+
   /*公共底部处理*/
   let pageArray = ["home", "video", "me", "friend", "account"];
   $(".footer>ul>li").click(function () {
