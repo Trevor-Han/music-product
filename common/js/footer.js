@@ -11,6 +11,14 @@ $(function () {
         });
         // 切换头部样式
         let currentName = pageArray[$(this).index()];
-        $(".header").removeClass().addClass("header "+ currentName);
+        $(".header-in").removeClass().addClass("header-in "+ currentName);
+        //切换界面
+        window.location.href = "./../"+currentName+"/index.html#"+currentName;
     });
+   let hashStr = window.location.hash.substr(1);
+   if(hashStr.length ===0){
+       $(".home").click();
+   }else {
+       $("."+hashStr).click();
+   }
 });

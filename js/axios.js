@@ -318,7 +318,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Iterate over an Array or an Object invoking a function for each item.
 	 *
 	 * If `obj` is an Array callback will be called passing
-	 * the value, index, and complete array for each item.
+	 * the value, home, and complete array for each item.
 	 *
 	 * If 'obj' is an Object callback will be called passing
 	 * the value, key, and complete object for each property.

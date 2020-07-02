@@ -1,0 +1,70 @@
+<!--头部 Start-->
+<div class="header-in">
+    <div class="header-default">
+        <div class="header-center">
+            <div class="header-center-box">
+                <img src="./../common/images/topbar-it666-search.png" alt="">
+                <input type="text" placeholder="大家都在搜 那个女孩">
+                <span class="header-title">我的音乐</span>
+                <div class="header-switch">
+                    <i></i>
+                    <span class="active">动态</span>
+                    <span>附近</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-left"></div>
+        <div class="header-cancle">
+            <a href="#">取消</a>
+        </div>
+        <div class="header-right"></div>
+    </div>
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="search-ad">
+                <img src="./../images/img1.jpg" alt="广告图" class="fluid-img">
+                <span>X</span>
+            </div>
+            <div class="search-history">
+                <div class="history-top">
+                    <h6>搜索历史</h6>
+                    <img src="./../images/search-it666-delete.png" alt="删除">
+                </div>
+                <ul class="history-bottom"></ul>
+            </div>
+            <div class="search-hot">
+                <div class="hot-top">
+                    <h6>热搜榜</h6>
+                </div>
+                <ul class="hot-bottom">
+
+                </ul>
+            </div>
+            <div class="search-current">
+                <div class="current-top">
+                    搜索"jiang"
+                </div>
+                <ul class="current-bottom">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="hotDetail" type="text/html">
+    <% for(let i = 0; i < data.length; i++){%>
+    <li>
+        <span class="hot-left"><%=(i + 1)%></span>
+        <div class="hot-right">
+            <p>
+                <strong><%=data[i].searchWord%></strong>
+                <span><%=data[i].score%></span>
+                <img src="<%=data[i].iconUrl%>" alt="hot">
+            </p>
+            <p><%=data[i].content%></p>
+        </div>
+    </li>
+    <% } %>
+</script>
+<link rel="stylesheet" href="./../common/css/header.css">
+<!--头部 End-->

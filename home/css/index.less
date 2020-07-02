@@ -1,0 +1,190 @@
+@import "../../css/common";
+.main{
+  width: 100%;
+  height: 100%;
+  .main-in{
+    width: 100%;
+    height: 4660/100rem;
+    padding: 0 30/100rem;
+    box-sizing: border-box;
+    .pull-down{
+      width: 100%;
+      height: 88/100rem;
+      position: relative;
+      img{
+        .center();
+      }
+      svg{
+        .center();
+      }
+    }
+    .pull-up{
+      width: 100%;
+      height: 98/100rem;
+      p{
+        text-align: center;
+        padding-top: 29/100rem;
+        box-sizing: border-box;
+        font-size: 24/100rem;
+      }
+    }
+    .swiper-container{
+      width: 690/100rem;
+      height: 266/100rem;
+      margin-top: 30/100rem;
+      border-radius: 10/100rem;
+      .swiper-wrapper{
+        .swiper-slide{
+          span{
+            padding: 5/100rem 10/100rem;
+            font-size: 22/100rem;
+            color: #fff;
+            background: deepskyblue;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-top-left-radius: 15/100rem;
+          }
+        }
+      }
+      .swiper-pagination{
+        .my-bullet{
+          display: inline-block;
+          width: 14/100rem;
+          height: 14/100rem;
+          margin: 0 6/100rem;
+          background: #ccc;
+          border-radius: 50%;
+        }
+        .my-bullet-active{
+          background: #fd271b;
+        }
+      }
+    }
+    .nav{
+      width: 100%;
+      padding: 44/100rem 0;
+      ul{
+        list-style: none;
+        display: flex;
+        li{
+          margin-right: 50/100rem;
+          text-align: center;
+          &:last-child{
+            margin-right: 0;
+          }
+          img{
+            width: 98/100rem;
+            background: #fd271b;
+            border-radius: 50%;
+            display: block;
+            overflow: hidden;
+            margin-bottom: 20/100rem;
+          }
+          span{
+            font-size: 22/100rem;
+          }
+          p{
+            position: relative;
+            i{
+              .center();
+              font-size: 22/100rem;
+              color: #fd271b;
+            }
+          }
+        }
+      }
+    }
+    .category{
+      width: 100%;
+      border-top: 1px solid #ccc;
+      .category-top{
+        width: 100%;
+        height: 120/100rem;
+        display: flex;
+        justify-content: space-between;
+        h3{
+          font-size: 34/100rem;
+          font-weight: bold;
+          color: #333;
+          line-height: 120/100rem;
+        }
+        span{
+          font-size: 26/100rem;
+          padding: 10/100rem 20/100rem;
+          border: 1px solid #ccc;
+          height: 66/100rem;
+          line-height: 46/100rem;
+          text-align: center;
+          box-sizing: border-box;
+          border-radius: 33/100rem;
+          margin-top: 27/100rem;
+        }
+      }
+      .category-bottom{
+        width: 100%;
+        ul{
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          li{
+            margin-bottom: 40/100rem;
+            width: 216/100rem;
+            div{
+              width: 100%;
+              border-radius: 15/100rem;
+              overflow: hidden;
+              position: relative;
+              .p1{
+                position: absolute;
+                top: 10/100rem;
+                right: 10/100rem;
+                img{
+                  vertical-align: top;
+                  position: relative;
+                  top: 5/100rem;
+                  width: 26/100rem;
+                }
+                span{
+                  font-size: 26/100rem;
+                  color: #fff;
+                }
+              }
+              .p2{
+                position: absolute;
+                top: 10/100rem;
+                left: 10/100rem;
+                img{
+                  width: 50/100rem;
+                  background: rgba(0,0,0,0.5);
+                  border-radius: 50%;
+                  border: 1px solid #fff;
+                }
+              }
+              .p3{
+                position: absolute;
+                right: 10/100rem;
+                bottom: 10/100rem;
+                img{
+                  width: 50/100rem;
+                }
+              }
+            }
+            .category-title{
+              width: 100%;
+              margin-top: 15/100rem;
+              font-size: 26/100rem;
+              color: #333;
+            }
+            .category-singer{
+              width: 100%;
+              font-size: 26/100rem;
+              color: #ccc;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1673,7 +1673,7 @@
 
     var activeSlide;
     if (isVirtual) {
-      activeSlide = swiper.$wrapperEl.find(("." + (params.slideClass) + "[data-swiper-slide-index=\"" + activeIndex + "\"]"));
+      activeSlide = swiper.$wrapperEl.find(("." + (params.slideClass) + "[data-swiper-slide-home=\"" + activeIndex + "\"]"));
     } else {
       activeSlide = slides.eq(activeIndex);
     }
@@ -1685,11 +1685,11 @@
       // Duplicate to all looped slides
       if (activeSlide.hasClass(params.slideDuplicateClass)) {
         $wrapperEl
-          .children(("." + (params.slideClass) + ":not(." + (params.slideDuplicateClass) + ")[data-swiper-slide-index=\"" + realIndex + "\"]"))
+          .children(("." + (params.slideClass) + ":not(." + (params.slideDuplicateClass) + ")[data-swiper-slide-home=\"" + realIndex + "\"]"))
           .addClass(params.slideDuplicateActiveClass);
       } else {
         $wrapperEl
-          .children(("." + (params.slideClass) + "." + (params.slideDuplicateClass) + "[data-swiper-slide-index=\"" + realIndex + "\"]"))
+          .children(("." + (params.slideClass) + "." + (params.slideDuplicateClass) + "[data-swiper-slide-home=\"" + realIndex + "\"]"))
           .addClass(params.slideDuplicateActiveClass);
       }
     }
@@ -1709,20 +1709,20 @@
       // Duplicate to all looped slides
       if (nextSlide.hasClass(params.slideDuplicateClass)) {
         $wrapperEl
-          .children(("." + (params.slideClass) + ":not(." + (params.slideDuplicateClass) + ")[data-swiper-slide-index=\"" + (nextSlide.attr('data-swiper-slide-index')) + "\"]"))
+          .children(("." + (params.slideClass) + ":not(." + (params.slideDuplicateClass) + ")[data-swiper-slide-home=\"" + (nextSlide.attr('data-swiper-slide-home')) + "\"]"))
           .addClass(params.slideDuplicateNextClass);
       } else {
         $wrapperEl
-          .children(("." + (params.slideClass) + "." + (params.slideDuplicateClass) + "[data-swiper-slide-index=\"" + (nextSlide.attr('data-swiper-slide-index')) + "\"]"))
+          .children(("." + (params.slideClass) + "." + (params.slideDuplicateClass) + "[data-swiper-slide-home=\"" + (nextSlide.attr('data-swiper-slide-home')) + "\"]"))
           .addClass(params.slideDuplicateNextClass);
       }
       if (prevSlide.hasClass(params.slideDuplicateClass)) {
         $wrapperEl
-          .children(("." + (params.slideClass) + ":not(." + (params.slideDuplicateClass) + ")[data-swiper-slide-index=\"" + (prevSlide.attr('data-swiper-slide-index')) + "\"]"))
+          .children(("." + (params.slideClass) + ":not(." + (params.slideDuplicateClass) + ")[data-swiper-slide-home=\"" + (prevSlide.attr('data-swiper-slide-home')) + "\"]"))
           .addClass(params.slideDuplicatePrevClass);
       } else {
         $wrapperEl
-          .children(("." + (params.slideClass) + "." + (params.slideDuplicateClass) + "[data-swiper-slide-index=\"" + (prevSlide.attr('data-swiper-slide-index')) + "\"]"))
+          .children(("." + (params.slideClass) + "." + (params.slideDuplicateClass) + "[data-swiper-slide-home=\"" + (prevSlide.attr('data-swiper-slide-home')) + "\"]"))
           .addClass(params.slideDuplicatePrevClass);
       }
     }
@@ -1770,8 +1770,8 @@
       return;
     }
 
-    // Get real index
-    var realIndex = parseInt(swiper.slides.eq(activeIndex).attr('data-swiper-slide-index') || activeIndex, 10);
+    // Get real home
+    var realIndex = parseInt(swiper.slides.eq(activeIndex).attr('data-swiper-slide-home') || activeIndex, 10);
 
     Utils.extend(swiper, {
       snapIndex: snapIndex,
@@ -1801,7 +1801,7 @@
     if (slide && slideFound) {
       swiper.clickedSlide = slide;
       if (swiper.virtual && swiper.params.virtual.enabled) {
-        swiper.clickedIndex = parseInt($(slide).attr('data-swiper-slide-index'), 10);
+        swiper.clickedIndex = parseInt($(slide).attr('data-swiper-slide-home'), 10);
       } else {
         swiper.clickedIndex = $(slide).index1();
       }
@@ -2205,7 +2205,7 @@
     var realIndex;
     if (params.loop) {
       if (swiper.animating) { return; }
-      realIndex = parseInt($(swiper.clickedSlide).attr('data-swiper-slide-index'), 10);
+      realIndex = parseInt($(swiper.clickedSlide).attr('data-swiper-slide-home'), 10);
       if (params.centeredSlides) {
         if (
           (slideToIndex < swiper.loopedSlides - (slidesPerView / 2))
@@ -2213,7 +2213,7 @@
         ) {
           swiper.loopFix();
           slideToIndex = $wrapperEl
-            .children(("." + (params.slideClass) + "[data-swiper-slide-index=\"" + realIndex + "\"]:not(." + (params.slideDuplicateClass) + ")"))
+            .children(("." + (params.slideClass) + "[data-swiper-slide-home=\"" + realIndex + "\"]:not(." + (params.slideDuplicateClass) + ")"))
             .eq(0)
             .index1();
 
@@ -2226,7 +2226,7 @@
       } else if (slideToIndex > swiper.slides.length - slidesPerView) {
         swiper.loopFix();
         slideToIndex = $wrapperEl
-          .children(("." + (params.slideClass) + "[data-swiper-slide-index=\"" + realIndex + "\"]:not(." + (params.slideDuplicateClass) + ")"))
+          .children(("." + (params.slideClass) + "[data-swiper-slide-home=\"" + realIndex + "\"]:not(." + (params.slideDuplicateClass) + ")"))
           .eq(0)
           .index1();
 
@@ -2285,7 +2285,7 @@
       var slide = $(el);
       if (index < swiper.loopedSlides) { appendSlides.push(el); }
       if (index < slides.length && index >= slides.length - swiper.loopedSlides) { prependSlides.push(el); }
-      slide.attr('data-swiper-slide-index', index);
+      slide.attr('data-swiper-slide-home', index);
     });
     for (var i$1 = 0; i$1 < appendSlides.length; i$1 += 1) {
       $wrapperEl.append($(appendSlides[i$1].cloneNode(true)).addClass(params.slideDuplicateClass));
@@ -2340,7 +2340,7 @@
     var params = swiper.params;
     var slides = swiper.slides;
     $wrapperEl.children(("." + (params.slideClass) + "." + (params.slideDuplicateClass) + ",." + (params.slideClass) + "." + (params.slideBlankClass))).remove();
-    slides.removeAttr('data-swiper-slide-index');
+    slides.removeAttr('data-swiper-slide-home');
   }
 
   var loop = {
@@ -2870,7 +2870,7 @@
 
     if (!params.followFinger) { return; }
 
-    // Update active index in free mode
+    // Update active home in free mode
     if (params.freeMode || params.watchSlidesProgress || params.watchSlidesVisibility) {
       swiper.updateActiveIndex();
       swiper.updateSlidesClasses();
@@ -4117,7 +4117,7 @@
               params.slideNextClass,
               params.slidePrevClass ].join(' '))
             .removeAttr('style')
-            .removeAttr('data-swiper-slide-index')
+            .removeAttr('data-swiper-slide-home')
             .removeAttr('data-swiper-column')
             .removeAttr('data-swiper-row');
         }
@@ -4402,7 +4402,7 @@
       } else {
         for (var i = previousFrom; i <= previousTo; i += 1) {
           if (i < from || i > to) {
-            swiper.$wrapperEl.find(("." + (swiper.params.slideClass) + "[data-swiper-slide-index=\"" + i + "\"]")).remove();
+            swiper.$wrapperEl.find(("." + (swiper.params.slideClass) + "[data-swiper-slide-home=\"" + i + "\"]")).remove();
           }
         }
       }
@@ -4433,8 +4433,8 @@
       }
       var $slideEl = params.renderSlide
         ? $(params.renderSlide.call(swiper, slide, index))
-        : $(("<div class=\"" + (swiper.params.slideClass) + "\" data-swiper-slide-index=\"" + index + "\">" + slide + "</div>"));
-      if (!$slideEl.attr('data-swiper-slide-index')) { $slideEl.attr('data-swiper-slide-index', index); }
+        : $(("<div class=\"" + (swiper.params.slideClass) + "\" data-swiper-slide-home=\"" + index + "\">" + slide + "</div>"));
+      if (!$slideEl.attr('data-swiper-slide-home')) { $slideEl.attr('data-swiper-slide-home', index); }
       if (params.cache) { swiper.virtual.cache[index] = $slideEl; }
       return $slideEl;
     },
@@ -6436,7 +6436,7 @@
       var isVirtual = swiper.virtual && swiper.params.virtual.enabled;
 
       var $slideEl = isVirtual
-        ? swiper.$wrapperEl.children(("." + (swiper.params.slideClass) + "[data-swiper-slide-index=\"" + index + "\"]"))
+        ? swiper.$wrapperEl.children(("." + (swiper.params.slideClass) + "[data-swiper-slide-home=\"" + index + "\"]"))
         : swiper.slides.eq(index);
 
       var $images = $slideEl.find(("." + (params.elementClass) + ":not(." + (params.loadedClass) + "):not(." + (params.loadingClass) + ")"));
@@ -6477,12 +6477,12 @@
           $imageEl.addClass(params.loadedClass).removeClass(params.loadingClass);
           $slideEl.find(("." + (params.preloaderClass))).remove();
           if (swiper.params.loop && loadInDuplicate) {
-            var slideOriginalIndex = $slideEl.attr('data-swiper-slide-index');
+            var slideOriginalIndex = $slideEl.attr('data-swiper-slide-home');
             if ($slideEl.hasClass(swiper.params.slideDuplicateClass)) {
-              var originalSlide = swiper.$wrapperEl.children(("[data-swiper-slide-index=\"" + slideOriginalIndex + "\"]:not(." + (swiper.params.slideDuplicateClass) + ")"));
+              var originalSlide = swiper.$wrapperEl.children(("[data-swiper-slide-home=\"" + slideOriginalIndex + "\"]:not(." + (swiper.params.slideDuplicateClass) + ")"));
               swiper.lazy.loadInSlide(originalSlide.index1(), false);
             } else {
-              var duplicatedSlide = swiper.$wrapperEl.children(("." + (swiper.params.slideDuplicateClass) + "[data-swiper-slide-index=\"" + slideOriginalIndex + "\"]"));
+              var duplicatedSlide = swiper.$wrapperEl.children(("." + (swiper.params.slideDuplicateClass) + "[data-swiper-slide-home=\"" + slideOriginalIndex + "\"]"));
               swiper.lazy.loadInSlide(duplicatedSlide.index1(), false);
             }
           }
@@ -6508,7 +6508,7 @@
 
       function slideExist(index) {
         if (isVirtual) {
-          if ($wrapperEl.children(("." + (swiperParams.slideClass) + "[data-swiper-slide-index=\"" + index + "\"]")).length) {
+          if ($wrapperEl.children(("." + (swiperParams.slideClass) + "[data-swiper-slide-home=\"" + index + "\"]")).length) {
             return true;
           }
         } else if (slides[index]) { return true; }
@@ -6516,7 +6516,7 @@
       }
       function slideIndex(slideEl) {
         if (isVirtual) {
-          return $(slideEl).attr('data-swiper-slide-index');
+          return $(slideEl).attr('data-swiper-slide-home');
         }
         return $(slideEl).index1();
       }
@@ -6524,7 +6524,7 @@
       if (!swiper.lazy.initialImageLoaded) { swiper.lazy.initialImageLoaded = true; }
       if (swiper.params.watchSlidesVisibility) {
         $wrapperEl.children(("." + (swiperParams.slideVisibleClass))).each(function (elIndex, slideEl) {
-          var index = isVirtual ? $(slideEl).attr('data-swiper-slide-index') : $(slideEl).index1();
+          var index = isVirtual ? $(slideEl).attr('data-swiper-slide-home') : $(slideEl).index1();
           swiper.lazy.loadInSlide(index);
         });
       } else if (slidesPerView > 1) {
@@ -6977,7 +6977,7 @@
         nextSlideMessage: 'Next slide',
         firstSlideMessage: 'This is the first slide',
         lastSlideMessage: 'This is the last slide',
-        paginationBulletMessage: 'Go to slide {{index}}',
+        paginationBulletMessage: 'Go to slide {{home}}',
       },
     },
     create: function create() {
@@ -7511,7 +7511,7 @@
         var $slideEl = slides.eq(i);
         var slideIndex = i;
         if (isVirtual) {
-          slideIndex = parseInt($slideEl.attr('data-swiper-slide-index'), 10);
+          slideIndex = parseInt($slideEl.attr('data-swiper-slide-home'), 10);
         }
         var slideAngle = slideIndex * 90;
         var round = Math.floor(slideAngle / 360);
@@ -7932,7 +7932,7 @@
       if (typeof clickedIndex === 'undefined' || clickedIndex === null) { return; }
       var slideToIndex;
       if (thumbsSwiper.params.loop) {
-        slideToIndex = parseInt($(thumbsSwiper.clickedSlide).attr('data-swiper-slide-index'), 10);
+        slideToIndex = parseInt($(thumbsSwiper.clickedSlide).attr('data-swiper-slide-home'), 10);
       } else {
         slideToIndex = clickedIndex;
       }
@@ -7944,8 +7944,8 @@
           swiper._clientLeft = swiper.$wrapperEl[0].clientLeft;
           currentIndex = swiper.activeIndex;
         }
-        var prevIndex = swiper.slides.eq(currentIndex).prevAll(("[data-swiper-slide-index=\"" + slideToIndex + "\"]")).eq(0).index1();
-        var nextIndex = swiper.slides.eq(currentIndex).nextAll(("[data-swiper-slide-index=\"" + slideToIndex + "\"]")).eq(0).index1();
+        var prevIndex = swiper.slides.eq(currentIndex).prevAll(("[data-swiper-slide-home=\"" + slideToIndex + "\"]")).eq(0).index1();
+        var nextIndex = swiper.slides.eq(currentIndex).nextAll(("[data-swiper-slide-home=\"" + slideToIndex + "\"]")).eq(0).index1();
         if (typeof prevIndex === 'undefined') { slideToIndex = nextIndex; }
         else if (typeof nextIndex === 'undefined') { slideToIndex = prevIndex; }
         else if (nextIndex - currentIndex < currentIndex - prevIndex) { slideToIndex = nextIndex; }
@@ -7972,9 +7972,9 @@
             thumbsSwiper._clientLeft = thumbsSwiper.$wrapperEl[0].clientLeft;
             currentThumbsIndex = thumbsSwiper.activeIndex;
           }
-          // Find actual thumbs index to slide to
-          var prevThumbsIndex = thumbsSwiper.slides.eq(currentThumbsIndex).prevAll(("[data-swiper-slide-index=\"" + (swiper.realIndex) + "\"]")).eq(0).index1();
-          var nextThumbsIndex = thumbsSwiper.slides.eq(currentThumbsIndex).nextAll(("[data-swiper-slide-index=\"" + (swiper.realIndex) + "\"]")).eq(0).index1();
+          // Find actual thumbs home to slide to
+          var prevThumbsIndex = thumbsSwiper.slides.eq(currentThumbsIndex).prevAll(("[data-swiper-slide-home=\"" + (swiper.realIndex) + "\"]")).eq(0).index1();
+          var nextThumbsIndex = thumbsSwiper.slides.eq(currentThumbsIndex).nextAll(("[data-swiper-slide-home=\"" + (swiper.realIndex) + "\"]")).eq(0).index1();
           if (typeof prevThumbsIndex === 'undefined') { newThumbsIndex = nextThumbsIndex; }
           else if (typeof nextThumbsIndex === 'undefined') { newThumbsIndex = prevThumbsIndex; }
           else if (nextThumbsIndex - currentThumbsIndex === currentThumbsIndex - prevThumbsIndex) { newThumbsIndex = currentThumbsIndex; }
@@ -8008,7 +8008,7 @@
       thumbsSwiper.slides.removeClass(thumbActiveClass);
       if (thumbsSwiper.params.loop) {
         for (var i = 0; i < thumbsToActivate; i += 1) {
-          thumbsSwiper.$wrapperEl.children(("[data-swiper-slide-index=\"" + (swiper.realIndex + i) + "\"]")).addClass(thumbActiveClass);
+          thumbsSwiper.$wrapperEl.children(("[data-swiper-slide-home=\"" + (swiper.realIndex + i) + "\"]")).addClass(thumbActiveClass);
         }
       } else {
         for (var i$1 = 0; i$1 < thumbsToActivate; i$1 += 1) {
