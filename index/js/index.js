@@ -118,7 +118,14 @@ $(function () {
       $(".current-top").text(`搜索"${this.value}"`);
       searchScroll.refresh();
   },1000);
-  
+    /*公共底部处理*/
+    $(".footer").load("./../common/footer.html",function () {
+        //当加载的内容添加后
+        let sc = document.createElement("script");
+        sc.src = "./../common/js/footer.js";
+        document.body.appendChild(sc);
+    });
+
     /*处理公共的内容区域*/
     // 1.获取SVG路径的长度
     let length = $("#refreshLogo")[0].getTotalLength();

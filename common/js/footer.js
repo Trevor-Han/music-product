@@ -1,7 +1,6 @@
 $(function () {
-    /*公共底部处理*/
     let pageArray = ["home", "video", "me", "friend", "account"];
-    $(".footer>ul>li").click(function () {
+    $(".footer-in>ul>li").click(function () {
         // 切换底部图标
         $(this).addClass("active").siblings().removeClass("active");
         let url = $(this).find("img").attr("src");
