@@ -17,6 +17,12 @@
     text-align: center;
     margin: 0 0.46rem;
 }
+.footer-in ul li a{
+    font-size: 0.18rem;
+    color: #333;
+    -webkit-tap-highlight-color: transparent;
+    background: transparent;
+}
 .footer-in ul li img {
     display: block;
     width: 0.56rem;
@@ -29,7 +35,4 @@
 .footer-in ul li.active img {
     background: #fd271b;
     border-radius: 50%;
-}
-.footer-in ul li.active span {
-    font-size: 0.18rem;
 }
