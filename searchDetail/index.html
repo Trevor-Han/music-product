@@ -81,51 +81,7 @@
                 </div>
             </div>
             <ul class="bottom">
-                <li>
-                    <div class="bottom-left">
-                        <i></i>
-                        <div>
-                            <p>小白图乖乖</p>
-                            <p>
-                                <img src="images/sql.png" alt="sql">小白图
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bottom-right">
-                        <img src="images/detail-it666-video.png" alt="video">
-                        <img src="images/detail-it666-more.png" alt="more">
-                    </div>
-                </li>
-                <li>
-                    <div class="bottom-left">
-                        <i></i>
-                        <div>
-                            <p>小白图乖乖</p>
-                            <p>
-                                <img src="images/sql.png" alt="sql">小白图
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bottom-right">
-                        <img src="images/detail-it666-video.png" alt="video">
-                        <img src="images/detail-it666-more.png" alt="more">
-                    </div>
-                </li>
-                <li>
-                    <div class="bottom-left">
-                        <i></i>
-                        <div>
-                            <p>小白图乖乖</p>
-                            <p>
-                                <img src="images/sql.png" alt="sql">小白图
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bottom-right">
-                        <img src="images/detail-it666-video.png" alt="video">
-                        <img src="images/detail-it666-more.png" alt="more">
-                    </div>
-                </li>
+
             </ul>
         </div>
         <div>视频</div>
@@ -135,11 +91,32 @@
         <div>主播电台</div>
         <div>用户</div>
     </div>
-</div>
-<!--footer start-->
-<div class="footer"></div>
-<!--footer end-->
+</div>i
+<script id="singleItem" type="text/html">
+    <% for(let i=0; i< songs.length ; i++) {%>
+    <li class="">
+        <div class="bottom-left">
+            <i></i>
+            <div>
+                <p><%=songs[i].name%></p>
+                <p>
+                    <img src="images/sql.png" alt="sql">
+                    <%=songs[i].artists[0].name%>
+                    -
+                    <%=songs[i].album.name%>
+                </p>
+            </div>
+        </div>
+        <div class="bottom-right">
+            <% if (songs[i].mvid !== 0){%>
+            <img src="images/detail-it666-video.png" alt="video">
+            < %}%>
 
+            <img src="images/detail-it666-more.png" alt="more">
+        </div>
+    </li>
+    <% } %>
+</script>
 <script src="./../js/less.js"></script>
 <script src="./../js/zepto.js"></script>
 <script src="./../js/fx.js"></script>

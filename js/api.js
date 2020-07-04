@@ -56,6 +56,24 @@
             return NJHttp.get("/search/suggest?keywords="+keywords+"&type=mobile");
         }
     }
+
+    class SearchApis{
+        /*
+        keywords：需要搜索的内容
+        offset：从什么地方开始
+        limit：从指定位置开取多少条数据
+        type：
+         */
+        static getSearch(keywords="",offset=0,limit=30,type=1 ){
+            return NJHttp.get("/search",{
+                keywords: keywords,
+                offset: offset,
+                limit: limit,
+                type: type
+            })
+        }
+    }
     window.NJHttp = NJHttp;
     window.HomeApis = HomeApis;
+    window.SearchApis = SearchApis;
 })();

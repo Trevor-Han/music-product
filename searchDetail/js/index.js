@@ -51,4 +51,12 @@ $(function () {
         $(this).toggleClass("active");
         $(".single-music>.bottom>li").toggleClass("active");
     });
+    SearchApis.getSearch(" 江南")
+        .then(function (data) {
+            let html = template('singleItem', data.result);
+            $(".single-music>.bottom").html(html);
+        })
+        .catch(function (err) {
+            console.log(err);
+        })
 });
