@@ -80,9 +80,7 @@
                     <span class="complete-select">完成</span>
                 </div>
             </div>
-            <ul class="bottom">
-
-            </ul>
+            <ul class="bottom"></ul>
         </div>
         <div>视频</div>
         <div>歌手</div>
@@ -91,9 +89,13 @@
         <div>主播电台</div>
         <div>用户</div>
     </div>
-</div>i
+</div>
+<!--footer start-->
+<div class="footer"></div>
+<!--footer end-->
+
 <script id="singleItem" type="text/html">
-    <% for(let i=0; i< songs.length ; i++) {%>
+    <%for(let i = 0; i < songs.length; i++){%>
     <li class="">
         <div class="bottom-left">
             <i></i>
@@ -108,14 +110,13 @@
             </div>
         </div>
         <div class="bottom-right">
-            <% if (songs[i].mvid !== 0){%>
+            <%if(songs[i].mvid !== 0){%>
             <img src="images/detail-it666-video.png" alt="video">
-            < %}%>
-
+           <%}%>
             <img src="images/detail-it666-more.png" alt="more">
         </div>
     </li>
-    <% } %>
+    <%}%>
 </script>
 <script src="./../js/less.js"></script>
 <script src="./../js/zepto.js"></script>

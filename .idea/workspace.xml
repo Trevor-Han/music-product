@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91cda28e-71ea-4076-8106-2df64685be1f" name="Default Changelist" comment="完成搜索详情界面头部导航及导航的相关事件">
-      <change afterPath="$PROJECT_DIR$/searchDetail/images/detail-it666-check.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/searchDetail/images/detail-it666-menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/searchDetail/images/detail-it666-more.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/searchDetail/images/detail-it666-play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/searchDetail/images/detail-it666-video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/searchDetail/images/sql.png" afterDir="false" />
+    <list default="true" id="91cda28e-71ea-4076-8106-2df64685be1f" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/searchDetail/css/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/searchDetail/css/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/searchDetail/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/searchDetail/index.html" afterDir="false" />
@@ -27,11 +21,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/searchDetail/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="64" column="39" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="39" />
+            <state relative-caret-position="678">
+              <caret line="97" column="3" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#p#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -40,24 +37,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/searchDetail/css/index.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="209" column="37" selection-start-line="209" selection-start-column="37" selection-end-line="209" selection-end-column="37" />
+            <state relative-caret-position="656">
+              <caret line="219" column="36" selection-start-line="219" selection-start-column="36" selection-end-line="219" selection-end-column="36" />
               <folding>
-                <element signature="e#35#41#0" />
-                <element signature="e#1140#1146#0" />
-                <element signature="e#2091#2105#0" />
-                <element signature="e#2429#2447#0" />
-                <element signature="e#2092#2106#0" />
-                <element signature="e#2727#2745#0" />
-                <element signature="e#2824#3053#0" />
-                <element signature="e#3122#3220#0" />
-                <element signature="e#3230#3344#0" />
-                <element signature="e#3117#3139#0" />
-                <element signature="e#2969#2983#0" />
-                <element signature="e#3452#3595#0" />
-                <element signature="e#3606#3645#0" />
-                <element signature="e#3686#4362#0" />
-                <element signature="e#4516#4534#0" />
+                <element signature="e#2122#2415#0" />
+                <element signature="e#2429#3387#0" />
+                <element signature="e#3402#3861#0" />
+                <element signature="e#3906#4047#0" />
               </folding>
             </state>
           </provider>
@@ -66,11 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/searchDetail/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-              <folding>
-                <element signature="e#333#495#0" />
-              </folding>
+            <state relative-caret-position="1052">
+              <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -98,6 +81,7 @@
         <option value="$PROJECT_DIR$/common/js/footer.js" />
         <option value="$PROJECT_DIR$/common/footer.html" />
         <option value="$PROJECT_DIR$/common/css/footer.css" />
+        <option value="$PROJECT_DIR$/home/index.html" />
         <option value="$PROJECT_DIR$/searchDetail/index.html" />
         <option value="$PROJECT_DIR$/searchDetail/js/index.js" />
         <option value="$PROJECT_DIR$/searchDetail/css/index.less" />
@@ -118,7 +102,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,18 +112,13 @@
             <path>
               <item name="music-product" type="b2602c69:ProjectViewProjectNode" />
               <item name="music-product" type="462c0819:PsiDirectoryNode" />
-              <item name="searchDetail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="music-product" type="b2602c69:ProjectViewProjectNode" />
-              <item name="music-product" type="462c0819:PsiDirectoryNode" />
-              <item name="searchDetail" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,7 +171,9 @@
       <workItem from="1593654804841" duration="1297000" />
       <workItem from="1593670227531" duration="13000" />
       <workItem from="1593735912463" duration="527000" />
-      <workItem from="1593744947348" duration="14490000" />
+      <workItem from="1593744947348" duration="15274000" />
+      <workItem from="1593822125700" duration="894000" />
+      <workItem from="1593918957425" duration="4318000" />
     </task>
     <task id="LOCAL-00001" summary="完成首页布局和基本文件整合">
       <created>1593535356817</created>
@@ -230,11 +210,18 @@
       <option name="project" value="LOCAL" />
       <updated>1593749068814</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成单曲播放界面搭建、歌曲导航栏、歌曲全选">
+      <created>1593768551266</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593768551266</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27649000" />
+    <option name="totallyTimeSpent" value="33645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -260,7 +247,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299293" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49921197" weight="0.32683307" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49921197" weight="0.32605305" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32605305" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50078803" side_tool="true" weight="0.3257989" />
       <window_info anchor="bottom" id="调试" order="11" />
@@ -318,7 +305,8 @@
     <MESSAGE value="公共底部模结构优化" />
     <MESSAGE value="修复git不能push问题" />
     <MESSAGE value="完成搜索详情界面头部导航及导航的相关事件" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成搜索详情界面头部导航及导航的相关事件" />
+    <MESSAGE value="完成单曲播放界面搭建、歌曲导航栏、歌曲全选" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成单曲播放界面搭建、歌曲导航栏、歌曲全选" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/reset.css">
@@ -360,13 +348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -425,47 +406,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="149" selection-start-line="149" selection-end-line="151" selection-end-column="17" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/searchDetail/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="64" column="39" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="39" />
+        <state relative-caret-position="678">
+          <caret line="97" column="3" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#p#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/searchDetail/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-          <folding>
-            <element signature="e#333#495#0" />
-          </folding>
+        <state relative-caret-position="1052">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/searchDetail/css/index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="209" column="37" selection-start-line="209" selection-start-column="37" selection-end-line="209" selection-end-column="37" />
+        <state relative-caret-position="656">
+          <caret line="219" column="36" selection-start-line="219" selection-start-column="36" selection-end-line="219" selection-end-column="36" />
           <folding>
-            <element signature="e#35#41#0" />
-            <element signature="e#1140#1146#0" />
-            <element signature="e#2091#2105#0" />
-            <element signature="e#2429#2447#0" />
-            <element signature="e#2092#2106#0" />
-            <element signature="e#2727#2745#0" />
-            <element signature="e#2824#3053#0" />
-            <element signature="e#3122#3220#0" />
-            <element signature="e#3230#3344#0" />
-            <element signature="e#3117#3139#0" />
-            <element signature="e#2969#2983#0" />
-            <element signature="e#3452#3595#0" />
-            <element signature="e#3606#3645#0" />
-            <element signature="e#3686#4362#0" />
-            <element signature="e#4516#4534#0" />
+            <element signature="e#2122#2415#0" />
+            <element signature="e#2429#3387#0" />
+            <element signature="e#3402#3861#0" />
+            <element signature="e#3906#4047#0" />
           </folding>
         </state>
       </provider>

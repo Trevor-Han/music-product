@@ -29,6 +29,7 @@ $(function () {
         $(this).addClass("active").siblings().removeClass("active");
         $(".main-in>div").removeClass("active").eq($(this).index()).addClass("active");
        $(".nav>ul>span").animate({left: this.offsetLeft, width: this.offsetWidth},400);
+        singleScroll.refresh();
     });
     /*公共底部处理*/
     $(".footer").load("./../common/footer.html", function () {
@@ -51,12 +52,27 @@ $(function () {
         $(this).toggleClass("active");
         $(".single-music>.bottom>li").toggleClass("active");
     });
-    SearchApis.getSearch(" 江南")
+    //播放列表数据加载默认数据
+    SearchApis.getSearch("江南")
         .then(function (data) {
-            let html = template('singleItem', data.result);
+            // console.log(data);
+            let html = template("singleItem", data.result);
             $(".single-music>.bottom").html(html);
+            singleScroll.refresh();
         })
         .catch(function (err) {
             console.log(err);
-        })
+        });
+    //播放列表滚动
+    let singleScroll = new IScroll(".main",{
+        mouseWheel: false,
+        scrollbars: false,
+        probeType:3
+    });
+    singleScroll.on("scroll",function () {
+        // console.log(this.y);
+        if(this.y < 0){
+            $(".single-music>.top").css({top: -this.y});
+        }
+    });
 });
