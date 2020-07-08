@@ -59,7 +59,7 @@
 <div class="main">
     <div class="main-in">
         <div class="active">综合</div>
-        <div class="single-music">
+        <div class="song">
             <div class="top">
                 <div class="top-left">
                     <p class="check-all">
@@ -80,21 +80,45 @@
                     <span class="complete-select">完成</span>
                 </div>
             </div>
-            <ul class="bottom"></ul>
+            <ul class="list"></ul>
         </div>
-        <div>视频</div>
+        <div class="video">
+            <ul class="list">
+                <li>
+                    <div class="video-left">
+                        <img src="images/test.jpg" alt="">
+                        <p>
+                            <img src="images/detail-it666-play.png" alt=play">
+                            <span>520万</span>
+                        </p>
+                    </div>
+                    <div class="video-right">
+                        <p class="video-title">we are family！</p>
+                        <p class="video-info">we are family！</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <div>歌手</div>
         <div>专辑</div>
         <div>歌单</div>
         <div>主播电台</div>
         <div>用户</div>
+        <!--上拉加载更多 Start-->
+        <div class="pull-up">
+            <p>
+                <img src="../images/pull-up.gif" alt="">
+                <span>上拉加载更多</span>
+            </p>
+        </div>
+        <!--上拉加载更多 End-->
     </div>
 </div>
 <!--footer start-->
 <div class="footer"></div>
 <!--footer end-->
 
-<script id="singleItem" type="text/html">
+<script id="songItem" type="text/html">
     <%for(let i = 0; i < songs.length; i++){%>
     <li class="">
         <div class="bottom-left">

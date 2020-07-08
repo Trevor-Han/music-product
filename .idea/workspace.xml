@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="91cda28e-71ea-4076-8106-2df64685be1f" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/searchDetail/css/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/searchDetail/css/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/searchDetail/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/searchDetail/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/searchDetail/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/searchDetail/js/index.js" afterDir="false" />
     </list>
+=======
+    <list default="true" id="91cda28e-71ea-4076-8106-2df64685be1f" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,10 +21,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/searchDetail/index.html">
+        <entry file="file://$PROJECT_DIR$/js/api.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="678">
               <caret line="97" column="3" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
               <folding>
@@ -29,21 +34,19 @@
                 <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#p#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/searchDetail/css/index.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="219" column="36" selection-start-line="219" selection-start-column="36" selection-end-line="219" selection-end-column="36" />
+=======
+            <state relative-caret-position="231">
+              <caret line="68" column="35" lean-forward="true" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
               <folding>
-                <element signature="e#2122#2415#0" />
-                <element signature="e#2429#3387#0" />
-                <element signature="e#3402#3861#0" />
-                <element signature="e#3906#4047#0" />
+                <element signature="e#1062#1126#0" />
+                <element signature="e#1160#1241#0" />
+                <element signature="e#1275#1349#0" />
+                <element signature="e#1379#1457#0" />
+                <element signature="e#1484#1546#0" />
+                <element signature="e#1573#1642#0" />
+                <element signature="e#1676#1738#0" />
+                <element signature="e#1784#1879#0" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -52,8 +55,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/searchDetail/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+            <state relative-caret-position="656">
+              <caret line="219" column="36" selection-start-line="219" selection-start-column="36" selection-end-line="219" selection-end-column="36" />
+              <folding>
+                <element signature="e#2122#2415#0" />
+                <element signature="e#2429#3387#0" />
+                <element signature="e#3402#3861#0" />
+                <element signature="e#3906#4047#0" />
+              </folding>
+=======
+            <state relative-caret-position="410">
+              <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+>>>>>>> Stashed changes
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/searchDetail/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="1052">
               <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+=======
+            <state relative-caret-position="180">
+              <caret line="98" column="19" lean-forward="true" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -71,7 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/api.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/index.less" />
         <option value="$PROJECT_DIR$/js/index.js" />
@@ -81,21 +113,24 @@
         <option value="$PROJECT_DIR$/common/js/footer.js" />
         <option value="$PROJECT_DIR$/common/footer.html" />
         <option value="$PROJECT_DIR$/common/css/footer.css" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/home/index.html" />
         <option value="$PROJECT_DIR$/searchDetail/index.html" />
         <option value="$PROJECT_DIR$/searchDetail/js/index.js" />
+=======
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/searchDetail/css/index.less" />
+        <option value="$PROJECT_DIR$/js/api.js" />
+        <option value="$PROJECT_DIR$/searchDetail/js/index.js" />
+        <option value="$PROJECT_DIR$/searchDetail/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1038" />
-    <option name="height" value="782" />
-  </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="添加" />
+    <option name="y" value="24" />
+    <option name="width" value="774" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -113,6 +148,26 @@
               <item name="music-product" type="b2602c69:ProjectViewProjectNode" />
               <item name="music-product" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
+=======
+            </path>
+            <path>
+              <item name="music-product" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music-product" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="music-product" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music-product" type="462c0819:PsiDirectoryNode" />
+              <item name="searchDetail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="music-product" type="b2602c69:ProjectViewProjectNode" />
+              <item name="music-product" type="462c0819:PsiDirectoryNode" />
+              <item name="searchDetail" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
           </expand>
           <select />
@@ -210,18 +265,31 @@
       <option name="project" value="LOCAL" />
       <updated>1593749068814</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00006" summary="完成单曲播放界面搭建、歌曲导航栏、歌曲全选">
       <created>1593768551266</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1593768551266</updated>
+=======
+    <task id="LOCAL-00006" summary="单曲歌曲填填充">
+      <created>1593879700952</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593879700952</updated>
+>>>>>>> Stashed changes
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="33645000" />
+=======
+    <option name="totallyTimeSpent" value="30624000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -233,10 +301,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1749409" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -305,8 +372,13 @@
     <MESSAGE value="公共底部模结构优化" />
     <MESSAGE value="修复git不能push问题" />
     <MESSAGE value="完成搜索详情界面头部导航及导航的相关事件" />
+<<<<<<< Updated upstream
     <MESSAGE value="完成单曲播放界面搭建、歌曲导航栏、歌曲全选" />
     <option name="LAST_COMMIT_MESSAGE" value="完成单曲播放界面搭建、歌曲导航栏、歌曲全选" />
+=======
+    <MESSAGE value="单曲歌曲填填充" />
+    <option name="LAST_COMMIT_MESSAGE" value="单曲歌曲填填充" />
+>>>>>>> Stashed changes
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/reset.css">
@@ -320,13 +392,6 @@
     <entry file="file://$PROJECT_DIR$/js/index.js" />
     <entry file="file://$PROJECT_DIR$/index/js/index.js" />
     <entry file="file://$PROJECT_DIR$/index/index.html" />
-    <entry file="file://$PROJECT_DIR$/js/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -406,6 +471,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/home/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -439,6 +505,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/searchDetail/css/index.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="656">
@@ -448,6 +516,60 @@
             <element signature="e#2429#3387#0" />
             <element signature="e#3402#3861#0" />
             <element signature="e#3906#4047#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="104" selection-start-line="104" selection-end-line="111" selection-end-column="9" />
+          <folding>
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="113" column="39" lean-forward="true" selection-start-line="112" selection-start-column="9" selection-end-line="113" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="68" column="35" lean-forward="true" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+          <folding>
+            <element signature="e#1062#1126#0" />
+            <element signature="e#1160#1241#0" />
+            <element signature="e#1275#1349#0" />
+            <element signature="e#1379#1457#0" />
+            <element signature="e#1484#1546#0" />
+            <element signature="e#1573#1642#0" />
+            <element signature="e#1676#1738#0" />
+            <element signature="e#1784#1879#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searchDetail/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searchDetail/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="98" column="19" lean-forward="true" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
