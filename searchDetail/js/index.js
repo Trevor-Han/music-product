@@ -4,8 +4,10 @@ $(function () {
     $(".nav>ul>li").forEach(function (oLi) {
        oUlWidth += oLi.offsetWidth;
     });
+
     let navPaddingRight = parseFloat(getComputedStyle($(".nav")[0]).paddingRight);
     $(".nav>ul").css({width:oUlWidth + navPaddingRight});
+
     let navScroll = new IScroll(".nav",{
         mouseWheel:false,
         scrollbars:false,
@@ -31,6 +33,7 @@ $(function () {
        $(".nav>ul>span").animate({left: this.offsetLeft, width: this.offsetWidth},400);
         myScroll.refresh();
     });
+
     /*公共底部处理*/
     $(".footer").load("./../common/footer.html", function () {
         //当加载的内容添加后
